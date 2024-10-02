@@ -6,17 +6,18 @@ interface Target {
 
 const Navbar = () => {
   const [expand, setExpand] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("resize", (e) => {
+    const handleResize = function (e: UIEvent) {
       const x = e.currentTarget as Target | null;
       if (x!.innerWidth > 900 && expand) setExpand(false);
-    });
-    return () =>
-      window.removeEventListener("resize", (e) => {
-        const x = e.currentTarget as Target | null;
-        if (x!.innerWidth > 900 && expand) setExpand(false);
-      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   });
+
   return (
     <div className="py-[26px] pl-12 pr-16 bg-white shadow-md shadow-[#00000017] fixed top-0 w-full flex items-center justify-between z-50">
       <a href="/">
@@ -41,7 +42,7 @@ const Navbar = () => {
       </svg>
       <nav
         className={`flex gap-5 max-xmd:absolute max-xmd:transition-[left] max-xmd:duration-500 max-xmd:flex-col max-xmd:items-center max-xmd:justify-center max-xmd:top-0 max-xmd:gap-[3.5rem] max-xmd:w-screen max-xmd:h-screen max-xmd:bg-white max-xmd:-left-[100rem] ${
-          expand && "show"
+          expand && "!left-0"
         }`}
       >
         <svg

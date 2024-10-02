@@ -44,10 +44,6 @@ div>svg:not(.mobile-menu):hover {
   @apply max-w-[107rem] mx-auto px-16 max-xsm:px-4 w-full;
 }
 
-.show {
-  left: 0 !important;
-}
-
 .myImage {
   animation: morph 8s ease-in-out infinite;
 }

@@ -10,7 +10,7 @@ const Main = () => {
       <div className="cssContainer">
         <div className="flex gap-[10rem] mb-[6rem] max-xmd:flex-col-reverse max-xmd:items-center max-xmd:gap-[5rem]">
           <div className="relative max-w-[50rem] flex flex-col gap-[3rem]">
-            <h1 className="text-[5.5rem] max-xsm:text-[4rem] font-bold leading-tight transition-[font-size] duration-500">
+            <h1 className="text-[5.5rem] max-xsm:text-[4rem] font-bold leading-[1.2] transition-[font-size] duration-500">
               Front-End React Developer👋
             </h1>
             <p className="text-[1.8rem] font-medium text-[#555]">

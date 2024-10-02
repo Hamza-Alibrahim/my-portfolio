@@ -58,9 +58,12 @@ const contactSection = () => {
             </span>
             <div className="flex flex-col gap-[.5rem]">
               <h2 className="text-[1.7rem] font-bold">Mail</h2>
-              <h3 className="text-[1.7rem] text-[#767676] hover:text-[#147efb] duration-300 cursor-pointer">
+              <a
+                href="mailto:hamza.outlookaa@gmail.com"
+                className="no text-[1.7rem] text-[#767676] hover:text-[#147efb] duration-300 cursor-pointer"
+              >
                 hamza.outlookaa@gmail.com
-              </h3>
+              </a>
             </div>
           </div>
         </div>

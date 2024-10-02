@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer className="bg-[#2d2e32] h-[15rem] flex items-center text-white">
-      <div className="cssContainer flex justify-between">
-        <h1 className="text-white text-[1.7rem] font-bold">
+      <div className="cssContainer flex items-center sm:justify-between max-sm:flex-col max-sm:gap-[2rem]">
+        <h1 className="text-white text-[1.7rem] font-bold max-sm:text-center">
           Copyright © 2024. All rights are reserved
         </h1>
         <div className="flex gap-4 max-xmd:justify-center">
