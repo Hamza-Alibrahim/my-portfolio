@@ -1,4 +1,4 @@
-import MyImage from "../../public/IMG_20230506_120900_496.jpg";
+import MyImage from "../../public/me.jpg";
 import TechIcons from "./TechIcons";
 
 const Main = () => {
